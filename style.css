@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f1ea;
+    color: #254d3c;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background-color: #f5f1ea;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #254d3c;
+    font-size: 15px;
+}
+
+nav a:hover {
+    opacity: 0.6;
+}
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-content > p:first-child {
+    letter-spacing: 4px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 70px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 30px;
+    background-color: #254d3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+section {
+    padding: 80px 8%;
+}
+
+h2 {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 42px;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: 350px;
+    padding: 40px;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.service h3 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.service p {
+    line-height: 1.7;
+}
+
+.service-time {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.service-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 24px;
+    background-color: #254d3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.service-button:hover {
+    opacity: 0.8;
+}
+
+
+
+form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+select,
+textarea,
+button {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 15px;
+    border: 1px solid #d8d0c4;
+    border-radius: 10px;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+button {
+    background-color: #254d3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: #254d3c;
+    color: white;
+}
+
+/* RESPONSIVE - TABLET I TELEFON */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px 5%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 80px 20px;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 60px 5%;
+    }
+
+    h2 {
+        font-size: 36px;
+        margin-bottom: 35px;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 100%;
+        max-width: 350px;
+        padding: 30px 25px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    footer {
+        padding: 30px 20px;
+    }
+}
+
+
+/* MANJI TELEFONI */
+
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 19px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .hero-content > p:first-child {
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .service h3 {
+        font-size: 25px;
+    }
+
+    .button {
+        padding: 12px 25px;
+    }
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-image {
+    width: 500px;
+    margin-top: 30px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+#usluge {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#usluge h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: 300px;
+    padding: 30px;
+    border-radius: 20px;
+    background: #eef5f0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.service-time {
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.service-button {
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    background: #789b86;
+    color: white;
+}
+#cenovnik {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#cenovnik h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.price-list {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px;
+    margin-bottom: 20px;
+    background: #eef5f0;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.price-item h3 {
+    margin: 0 0 5px;
+    font-size: 22px;
+}
+
+.price-item p {
+    margin: 0;
+    color: #666;
+}
+
+.price-item strong {
+    font-size: 20px;
+    color: #789b86;
+}#cenovnik {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#cenovnik h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.price-list {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px;
+    margin-bottom: 20px;
+    background: #eef5f0;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.price-item h3 {
+    margin: 0 0 5px;
+    font-size: 22px;
+}
+
+.price-item p {
+    margin: 0;
+    color: #666;
+}
+
+.price-item strong {
+    font-size: 20px;
+    color: #789b86;
+}
+.price-category {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+.price-note {
+    margin: 15px auto 30px;
+    color: #666;
+    font-size: 14px;
+}
+
+.blow-dry {
+    max-width: 700px;
+    margin: 40px auto 0;
+    padding: 25px 30px;
+    background: #eef5f0;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.blow-dry h3 {
+    margin: 0 0 8px;
+    font-size: 22px;
+}
+
+.blow-dry p {
+    margin: 0 0 12px;
+    color: #666;
+}
+
+.blow-dry strong {
+    font-size: 20px;
+    color: #789b86;
+}
+#kontakt {
+    padding: 70px 20px;
+    text-align: center;
+    background: #dfece4;
+    color: #2f4036;
+}
+
+#kontakt h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+    color: #294336;
+}
+
+.contact-tagline {
+    margin-bottom: 35px;
+    color: #4f6257;
+    font-size: 17px;
+}
+
+.contact-info {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-info p {
+    margin: 22px 0;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #2f4036;
+}
+
+.contact-info strong {
+    color: #294336;
+}
+
+.contact-info a {
+    color: #486b57;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+.map-button {
+    display: inline-block;
+    margin: 5px 0 20px;
+    padding: 12px 25px;
+    border-radius: 25px;
+    background: #789b86;
+    color: white !important;
+    text-decoration: none !important;
+    font-weight: 600;
+}
+
+.map-button:hover {
+    background: #607f6c;
+}
