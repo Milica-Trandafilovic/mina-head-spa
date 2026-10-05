@@ -10,7 +10,7 @@ bookingForm.addEventListener("submit", function(event) {
     const time = document.getElementById("time").value;
     const note = document.getElementById("note").value;
 
-    const message = 
+    const message =
         "NOVI ZAHTEV ZA ZAKAZIVANJE\n\n" +
         "Ime i prezime: " + name + "\n" +
         "Telefon: " + phone + "\n" +
@@ -19,6 +19,8 @@ bookingForm.addEventListener("submit", function(event) {
         "Vreme: " + time + "\n" +
         "Napomena: " + (note || "Nema napomene");
 
-    window.location.href =
-        "sms:0606006263?body=" + encodeURIComponent(message);
+    const whatsappURL =
+        "https://wa.me/381606006263?text=" + encodeURIComponent(message);
+
+    window.location.href = whatsappURL;
 });
