@@ -10,14 +10,14 @@ bookingForm.addEventListener("submit", function(event) {
     const time = document.getElementById("time").value;
     const note = document.getElementById("note").value;
 
-    const message =
-        NOVI ZAHTEV ZA ZAKAZIVANJE%0A%0A +
-        Ime i prezime: ${name}%0A +
-        Telefon: ${phone}%0A +
-        Usluga: ${service}%0A +
-        Datum: ${date}%0A +
-        Vreme: ${time}%0A +
-        Napomena: ${note || "Nema napomene"};
+    const message = `NOVI ZAHTEV ZA ZAKAZIVANJE
 
-    window.location.href = sms:0606006263?body=${message};
+Ime i prezime: ${name}
+Telefon: ${phone}
+Usluga: ${service}
+Datum: ${date}
+Vreme: ${time}
+Napomena: ${note || "Nema napomene"}`;
+
+    window.location.href = sms:0606006263?body=${encodeURIComponent(message)};
 });
