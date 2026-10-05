@@ -20,7 +20,8 @@ bookingForm.addEventListener("submit", function(event) {
         "Napomena: " + (note || "Nema napomene");
 
     const whatsappURL =
-        "https://wa.me/381606006263?text=" + encodeURIComponent(message);
+        "https://web.whatsapp.com/send?phone=381606006263&text=" +
+        encodeURIComponent(message);
 
     window.location.href = whatsappURL;
 });
