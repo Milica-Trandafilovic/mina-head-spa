@@ -202,29 +202,48 @@
         <section id="zakazivanje">
             <h2>Zakažite termin</h2>
 
-            <form>
+           <form id="bookingForm">
 
-                <input type="text" placeholder="Ime i prezime">
+    <input 
+        type="text" 
+        id="name" 
+        placeholder="Ime i prezime" 
+        required
+    >
 
-                <input type="tel" placeholder="Broj telefona">
+    <input 
+        type="tel" 
+        id="phone" 
+        placeholder="Broj telefona" 
+        required
+    >
 
-                <select>
-                    <option>Izaberite uslugu</option>
-                    <option>Head Spa</option>
-                    <option>Relax masaža</option>
-                </select>
+    <select id="service" required>
+        <option value="">Izaberite uslugu</option>
+        <option>Relax Head Spa – 45 min – 3.500 RSD</option>
+        <option>Premium Head Spa – 60 min – 4.500 RSD</option>
+        <option>Gold Head Spa – 75 min – 5.500 RSD</option>
+        <option>Relax masaža – 30 min – 1.300 RSD</option>
+        <option>Relax masaža – 60 min – 2.000 RSD</option>
+        <option>Relax masaža – 90 min – 2.500 RSD</option>
+        <option>Head Spa + Relax masaža</option>
+        <option>Feniranje – 1.000 RSD</option>
+    </select>
 
-                <input type="date">
+    <input type="date" id="date" required>
 
-                <input type="time">
+    <input type="time" id="time" required>
 
-                <textarea placeholder="Napomena"></textarea>
+    <textarea 
+        id="note" 
+        placeholder="Napomena (opciono)"
+    ></textarea>
 
-                <button type="submit">
-                    Pošalji zahtev
-                </button>
+    <button type="submit">
+        Pošalji zahtev za zakazivanje
+    </button>
 
-            </form>
+</form>
         </section>
 
     </main>
